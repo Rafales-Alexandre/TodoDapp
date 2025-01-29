@@ -20,7 +20,7 @@ const App = () => {
   
   useEffect(() => {
     if (signer) {
-      fetchTasks(); // Récupérer les tâches dès que le signer est disponible
+      fetchTasks(); 
     }
   }, [signer]);
 
@@ -48,9 +48,9 @@ const App = () => {
 
   const fetchTasks = async () => {
     try {
-      if (!contract) return; // Vérifiez que le contrat est disponible
-      const fetchedTasks = await contract.readTask(); // Appel au contrat pour récupérer les tâches
-      setTasks(fetchedTasks); // Mettre à jour les tâches dans l'état
+      if (!contract) return; 
+      const fetchedTasks = await contract.readTask(); 
+      setTasks(fetchedTasks); 
     } catch (err) {
       setError("Failed to fetch tasks: " + err.message);
     }

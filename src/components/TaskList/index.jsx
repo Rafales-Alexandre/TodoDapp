@@ -1,7 +1,6 @@
 import React from "react";
 
 const TaskList = ({ tasks, onEdit, onDelete }) => {
-  // Fonction pour mapper les états numériques à leurs labels
   const getTaskStateLabel = (state) => {
     switch (state) {
       case 0:

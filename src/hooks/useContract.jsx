@@ -26,11 +26,9 @@ const useContract = (contractAddress, contractABI) => {
   };
 
   const disconnectWallet = () => {
-    // Réinitialiser uniquement le signer et le contrat
     setSigner(null);
     setContract(null);
   
-    // Nettoyer les listeners associés à MetaMask
     if (window.ethereum?.removeAllListeners) {
       window.ethereum.removeAllListeners();
     }

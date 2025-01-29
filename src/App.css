@@ -1,5 +1,5 @@
 @import "tailwindcss";
-/* Ajoute des transitions pour les boutons */
+
 button {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -12,7 +12,6 @@ button:active {
   transform: scale(0.95);
 }
 
-/* Style pour les modales */
 .modal {
   background: white;
   padding: 20px;
@@ -47,7 +46,6 @@ input:focus, select:focus {
   outline: none;
 }
 
-/* Style des cartes de tâche */
 ul > li {
   background: #f9f9f9;
   padding: 15px;
@@ -60,7 +58,6 @@ ul > li:hover {
   background: #f1f1f1;
 }
 
-/* Général */
 body {
   font-family: Arial, sans-serif;
   background: #f0f4f8;
